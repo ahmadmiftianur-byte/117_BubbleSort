@@ -69,3 +69,13 @@ void display() {
 
 }
 
+int main() { 
+
+    input(); // memanggil procedur input
+
+    bubblesortArray(); // memanggil procedur bubble sort
+    display(); // memanggil procedur display
+
+    system("pause"); // untuk menahan layar agar tidak langsung tertutup setelah program selesai dijalankan
+    return 0;
+}
