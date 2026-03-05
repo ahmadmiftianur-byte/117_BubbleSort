@@ -5,3 +5,23 @@ using namespace std;
 int arr[20]; // deklarasi variable global array a dengan ukuran 20
 int n; // deklarasi variable global n untuk menyimpan banyaknya elemen array
 
+void input() { // procedur untuk input
+    while (true) { 
+        cout << "Masukkan banyaknya elemen array: "; // output ke layar
+        cin >> n; // output dari pengguna
+        if (n <= 20) { // jika n kurang dari atau sama dengan 20
+            break; // keluar dari loop 
+        } else { // jika n lebih dari 20
+            cout << "Array dapat mempunyai maksimal 20 elemen." << endl; // pesan error jika input tidak valid
+        }
+    }
+    cout << "===============================" << endl; // output ke layar
+        cout << "Masukkan elemen ke-" << endl; // output ke layar
+        cout << "===============================" << endl; // output ke layar
+        
+        for (int i = 0; i < n; i++) { // loop dengan i dimulai dari 0 hingga n-1
+            cout << "Element ke-" << (i + 1) << ": "; // output ke layar
+            cin >> arr[i]; // output dari pengguna
+        }
+    }
+
